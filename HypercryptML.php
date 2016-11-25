@@ -3,6 +3,7 @@
  * DateOfCreation : 11/24/16 >
  * Name of Project : HypercryptML , An Automatic Html Obfuscator Written in Php >
  */
+require('simple_html_dom.php');
 $target_dir='';                          # <IMPORTANT> Directory of our page to load.
 $target_file=$target_dir . 'index.html'; # <IMPORTANT> Page file to load.
 global $HTML;
@@ -15,12 +16,12 @@ function strToHex($string) {
 }
 function getHTML($CTL) {
 	global $HTML;
-	$HTML=htmlentities(file_get_contents($CTL));
+	$HTML=file_get_html($CTL);
 }
   function obbHTML() {
 	  global $HTML;
-	  $hexed=strToHex($HTML);
-	  $HTML="<!DOCTYPE html><html>\n<head>\n</head>\n<body>\n<script type=\"text/javascript\">\n//<!-- Obfuscated with HypercryptML -->\neval(unescape(\"" . $hexed . "\"));\n // <!-- Obfuscated with HypercryptML -->\n</script>\n<noscript>Error : Your browser does not have javascript enabled.</noscript>\n</body>\n</html>";
+	  $InjHtml=strToHex('document.write(\'' . $HTML . '\');');
+	  $HTML="<!DOCTYPE html><html>\n<head>\n</head>\n<body>\n<script type=\"text/javascript\">\n//<!-- Obfuscated with HypercryptML -->\neval(unescape(\"" . $InjHtml . "\"));\n // <!-- Obfuscated with HypercryptML -->\n</script>\n<noscript>Error : Your browser does not have javascript enabled.</noscript>\n</body>\n</html>";
 }
 /* --Functions End-- */
 getHTML($target_file);
