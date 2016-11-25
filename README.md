@@ -11,3 +11,6 @@ Unlike other Html Obfuscation tools.. HML Makes NO Hard Edits to your html file.
 
 # What is the downside of using HML?
 The only downside i can think of ... Is the fact you have no control over what part of the code gets obfuscated.. Which i should add i would not have any internal Javascript,PHP,CSS inside of your Html file , please keep them External to avoid any bugs.
+
+# How can i use it?
+Well now that ive used a 3rd party library.. You would need to download both of the php files uploaded here.. and put them on your website.. Then you would need to update the $target_file variable as well as the $target_dir and point them to the correct file and directory.. if there is no directory and the file is in the same folder just leave the $target_dir string blank.. Once you have updated the variables when you visit the HypercryptML.php page it will display the page you pointed it too but with an obfuscated code!
