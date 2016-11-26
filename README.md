@@ -16,7 +16,8 @@ The only downside i can think of ... Is the fact you have no control over what p
 Well now that ive used a 3rd party library.. You would need to download both of the php files uploaded here.. and put them on your website.. Then you would need to update the $target_file variable as well as the $target_dir and point them to the correct file and directory.. if there is no directory and the file is in the same folder just leave the $target_dir string blank.. Once you have updated the variables when you visit the HypercryptML.php page it will display the page you pointed it too but with an obfuscated code!
 
 # New Code?
-As pf 11/25/16 HML has been refactored into a more organized code , it now uses Classes, Getters, Setters.. And has pretty much helped me learn quite a few new things about Php ! I Will continue my learnings of Php and will try to create a better obfuscator/update to this obfuscator.. In my opinion this obfuscation isnt as good as i want it to be... It simply converts the html code to hex and throws in some javascript and bam obfuscated.. Not very impressed with this.. Although i was happy that i had accomplished the goal of bringing this project to completion ... I'm still not very happy with the actual obfuscation ! So... i will be trying to create a better obfuscation !
+As of 11/25/16 HML has been refactored into a more organized code , it now uses Classes, Getters, Setters.. And has pretty much helped me learn quite a few new things about Php ! I Will continue my learnings of Php and will try to create a better obfuscator/update to this obfuscator.. In my opinion this obfuscation isnt as good as i want it to be... It simply converts the html code to hex and throws in some javascript and bam obfuscated.. Not very impressed with this.. Although i was happy that i had accomplished the goal of bringing this project to completion ... I'm still not very happy with the actual obfuscation ! So... i will be trying to create a better obfuscation !
 
 # TODO:
- - Create Advanced Obfuscation Algorithm
+ - Create Advanced Html Obfuscation Algorithm
+ - Add CSS to JS Obfusction Support
