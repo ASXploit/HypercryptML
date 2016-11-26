@@ -89,45 +89,4 @@ class Cryptor
 $mainC = new Cryptor('','index.html');
 echo $mainC->cryptHtml();
 
-
-
-
-
-
-
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
