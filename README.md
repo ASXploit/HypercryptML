@@ -20,5 +20,3 @@ As of 11/25/16 HML has been refactored into a more organized code , it now uses 
 
 # TODO:
  - Create Advanced Html Obfuscation Algorithm
- - Add CSS Minification
- - Add CSS to JS Obfusction Support
