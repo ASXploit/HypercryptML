@@ -18,5 +18,7 @@ Well now that ive used a 3rd party library.. You would need to download both of 
 # New Code?
 As of 11/25/16 HML has been refactored into a more organized code , it now uses Classes, Getters, Setters.. And has pretty much helped me learn quite a few new things about Php ! I Will continue my learnings of Php and will try to create a better obfuscator/update to this obfuscator.. In my opinion this obfuscation isnt as good as i want it to be... It simply converts the html code to hex and throws in some javascript and bam obfuscated.. Not very impressed with this.. Although i was happy that i had accomplished the goal of bringing this project to completion ... I'm still not very happy with the actual obfuscation ! So... i will be trying to create a better obfuscation !
 
+As of 11/26/16 HML has now added base64 to its obfuscation code!
+
 # TODO:
  - Create Advanced Html Obfuscation Algorithm
